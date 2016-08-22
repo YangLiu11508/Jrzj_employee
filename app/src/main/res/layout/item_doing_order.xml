@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ds_40"
+        android:background="#f5f5f5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/ds_25">
+
+        <TextView
+            android:id="@+id/tv_fuwu"
+            style="@style/textview_order"
+            android:text="服务项目：" />
+
+        <TextView
+            android:id="@+id/tv_fuwu_dec"
+            style="@style/textview_order"
+            android:layout_toRightOf="@id/tv_fuwu"
+            android:text="管道维修" />
+
+        <TextView
+            android:id="@+id/tv_bianhao"
+            style="@style/textview_order"
+            android:layout_below="@id/tv_fuwu"
+            android:text="订单编号：" />
+
+        <TextView
+            android:id="@+id/tv_bianhao_dec"
+            style="@style/textview_order"
+            android:layout_below="@id/tv_fuwu_dec"
+            android:layout_toRightOf="@id/tv_bianhao"
+            android:text="aaaaaaaaa" />
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/textview_order"
+            android:layout_below="@id/tv_bianhao"
+            android:text="预约时间：" />
+
+        <TextView
+            android:id="@+id/tv_time_dec"
+            style="@style/textview_order"
+            android:layout_below="@id/tv_bianhao_dec"
+            android:layout_toRightOf="@id/tv_bianhao"
+            android:text="2015-09-09（周六）10:00" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            style="@style/textview_order"
+            android:layout_below="@id/tv_time"
+            android:text="预约地址：" />
+
+        <TextView
+            android:id="@+id/tv_address_dec"
+            style="@style/textview_order"
+            android:layout_below="@id/tv_time_dec"
+            android:layout_toRightOf="@id/tv_bianhao"
+            android:text="北京市昌平区昌平区aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa昌平区" />
+
+
+        <TextView
+            android:layout_marginTop="@dimen/ds_10"
+            android:textSize="@dimen/fs_40"
+            android:id="@+id/img_lijichongzhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_blue_border"
+            android:paddingBottom="@dimen/ds_20"
+            android:paddingLeft="@dimen/ds_25"
+            android:paddingRight="@dimen/ds_25"
+            android:paddingTop="@dimen/ds_20"
+            android:text="  去服务  "
+            android:textColor="@color/btn_blue" />
+
+        <TextView
+            android:id="@+id/tv_product_order"
+            android:textSize="@dimen/fs_40"
+            android:layout_marginTop="@dimen/ds_150"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_blue_border"
+            android:paddingBottom="@dimen/ds_20"
+            android:paddingLeft="@dimen/ds_25"
+            android:paddingRight="@dimen/ds_25"
+            android:paddingTop="@dimen/ds_20"
+            android:text="生成订单"
+            android:textColor="@color/btn_blue" />
+
+    </RelativeLayout>
+</LinearLayout>
